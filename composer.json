@@ -1,0 +1,48 @@
+{
+    "name": "multek/laravel-feedback",
+    "description": "Headless, customizable user feedback collection for Laravel with flexible metadata",
+    "keywords": ["laravel", "feedback", "user-feedback", "metadata"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Multek",
+            "email": "dev@multek.com"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "illuminate/contracts": "^11.0|^12.0",
+        "illuminate/support": "^11.0|^12.0"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.0",
+        "orchestra/testbench": "^9.0|^10.0",
+        "pestphp/pest": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Multek\\LaravelFeedback\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Multek\\LaravelFeedback\\Tests\\": "tests/",
+            "Multek\\LaravelFeedback\\Database\\Factories\\": "database/factories/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Multek\\LaravelFeedback\\FeedbackServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
